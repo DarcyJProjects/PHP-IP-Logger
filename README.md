@@ -9,3 +9,8 @@ A simple collection of tools to add to your website. Created in PHP.
 4. In your "index.php" file, go to the PHP code you just added and enter the directory of your "geoip.txt" file into the quotation marks like so: $logFile = '/var/geoip/geoip.txt';
 5. Save all files and load "index.php" in a web browser. If you see an error message, it means your php file is having permission errors opening and writing to the geoip.txt file. If no error message appeared, go back and check your geoip.txt file for a line.
 6. All done
+
+# Demo
+**iplog.php**
+When a user loads into your website that has this php script enabled, you'll get this style of output in your log file:
+[16/02/2021 05:24 am] [US] United States - Washington, D.C., Washington | 12.34.56.789
