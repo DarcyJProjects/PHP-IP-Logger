@@ -1,5 +1,6 @@
 # IP Tools for your Website
-A simple collection of tools to add to your website. Created in PHP.
+A simple collection of tools to add to your website. Created in PHP. <br>
+API: https://ip-api.com (not created by me)
 
 ## Installation
 **iplog.php**
