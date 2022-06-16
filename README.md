@@ -11,6 +11,16 @@ API: https://ip-api.com (not created by me)
 5. Save all files and load "index.php" in a web browser. If you see an error message, it means your php file is having permission errors opening and writing to the geoip.txt file. If no error message appeared, go back and check your geoip.txt file for a line.
 6. All done
 
+**Apache2 PHP Setup**
+If you're running apache2 for webhosting (like me), and you haven't already setup PHP for it, you'll need to run these commands:
+```
+apt-get install libapache2-mod-php7.4
+a2enmod php7.4
+service apache2 reload
+```
+If you would prefer a different PHP version, just change the "7.4" in the first two commands to the version you require.
+  
+  
 ## Demo
 **iplog.php** <br>
 When a user loads into your website that has this php script enabled, you'll get this style of output in your log file: <br>
