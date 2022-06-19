@@ -38,5 +38,5 @@ service apache2 reload
 #### **iplog.php demo**<br>
 When a user loads into a webpage that has this php script enabled, you'll get this style of output in your log file: <br>
 ```
-[16/02/2021 05:24 am] [US] United States - Washington, D.C., Washington | 12.34.56.789
+[19/06/2022 11:43 am] - index.php -  [AU] Australia - Western Australia, Perth | 123.456.78.90
 ```
