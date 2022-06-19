@@ -1,8 +1,8 @@
 <?php
-      //SIMPLE GEOLOCATION v2----------------//
-      //LOG SCRIPT v2------------------------//
-      //Revision: 062201---------------------//
-      //Copyright © Darcy Johnson 2021-2022--//
+      //SIMPLE GEOLOCATION v2------------------//
+      //LOG SCRIPT v2--------------------------//
+      //Revision: 062202-----------------------//
+      //Copyright (c) 2021-2022 Darcy Johnson--//
       
       //CONFIGURATION--------------------------------------------------------------------------//
       $webpagename = "index.php"; //Set this to the name of the webpage the script is added to
