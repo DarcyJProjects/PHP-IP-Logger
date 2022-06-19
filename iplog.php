@@ -1,12 +1,17 @@
 <?php
-      //SIMPLE GEOLOCATION v2
-      //LOG SCRIPT v2
-      //darcyjprojects.xyz
+      //SIMPLE GEOLOCATION v2----------------//
+      //LOG SCRIPT v2------------------------//
+      //Revision: 062201---------------------//
+      //Copyright © Darcy Johnson 2021-2022--//
+      
+      //CONFIGURATION--------------------------------------------------------------------------//
+      $webpagename = "index.php"; //Set this to the name of the webpage the script is added to
 
-      //Time and Date
       date_default_timezone_set('Australia/Perth'); //Set to your Time Zone
       $date = "[" . date("d/m/Y h:i a") . "]"; //Default: Day, Month, Year, 12 hour time
-       
+      
+      $logFile = '/var/geoip/geoip.txt'; //Directory & file log is written to
+      //---------------------------------------------------------------------------------------//
 
       //Get User IP
       if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
@@ -32,10 +37,9 @@
 	    $isp = $ipinfo['isp'];
   
       //Formatting of output
-      $ipoutput = $date . ' [' . $countrycode . '] ' . $country . ' - ' . $region . ', ' . $city . ' | ' . $userip;
+      $ipoutput = $date . ' - ' . $webpagename . ' - ' . ' [' . $countrycode . '] ' . $country . ' - ' . $region . ', ' . $city . ' | ' . $userip;
   
       //Write to file
-      $logFile = '/var/geoip/geoip.txt'; //Output directory of file
-      $logfile = fopen($logFile, 'a+') or die("There has been an error, please contact the website admin with subject php error. Thanks");
+      $logfile = fopen($logFile, 'a+') or die("PHP Error opening file, please contact the website administrator. Thanks.");
       fwrite($logfile, $ipoutput."\n");
     ?>
