@@ -30,9 +30,12 @@ API: https://ip-api.com (3rd party API - I have no affiliation with the creators
 apt-get install libapache2-mod-php7.4
 a2enmod php7.4
 service apache2 reload
+
+OR
+sudo apt install php libapache2-mod-php
+sudo systemctl restart apache2
 ```
 * If you would prefer a different PHP version, just change the "7.4" in the first two commands to the version you require.
-  
   
 ## Demo
 #### **iplog.php demo**<br>
