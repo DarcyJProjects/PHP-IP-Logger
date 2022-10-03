@@ -1,7 +1,7 @@
-# IP Tools for your Website
-A simple collection of PHP based tools to aid in traffic and IP logging for your website.<br>
+# PHP IP Logger
+A simple PHP IP logger which saves info about users accessing your hosted php webpage. 
 
-Each tool needs to be installed on every webpage file you want it to work on.
+The IP Logger needs to be installed on every webpage file you want it to work on.
 Each webpage must be a PHP file for the scripts to opperate ('.php').
 PHP must be supported and setup on your webserver for the tools to opperate [see here for apache2](#apache2-php-setup)
 
